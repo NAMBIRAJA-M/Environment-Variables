@@ -19,7 +19,7 @@ This project sets up user authentication using Express and Passport.js with a lo
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
+    git clone https://github.com/NAMBIRAJA-M/your-repo-name.git
     ```
 
 2. Navigate to the project directory:
@@ -51,5 +51,38 @@ This project sets up user authentication using Express and Passport.js with a lo
 
 2. Open your browser and navigate to `http://localhost:3000`.
 
-## Project Structure
+## Configuration
+
+### Passport.js
+
+Passport.js is configured in `config/passport.js`. It uses the LocalStrategy to authenticate users with a username and password.
+
+### User Model
+
+The user model is defined in `models/user.js`. It includes methods for password hashing and password validation.
+
+### Routes
+
+Routes are defined in `routes/index.js`. This includes routes for logging in, logging out, and accessing protected resources.
+
+## Security
+
+- Passwords are hashed using bcrypt before being stored in the database.
+- Session secrets are stored in environment variables for added security.
+- HTTPS is recommended for production to secure data transmission.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+
+## Acknowledgements
+
+- [Express](https://expressjs.com/)
+- [Passport.js](http://www.passportjs.org/)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Express-Session](https://www.npmjs.com/package/express-session)
 
